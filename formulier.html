@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulier - Ouderavond</title>
+</head>
+<body>
+  <nav class="navbar">
+      <div class="nav-left">
+        <img src="https://www.techniekcollegerotterdam.nl/assets/tcr-logo-a6a45f6beeaae69f30221d89d2a3e4ba1e2696114d5587459bf6a5dcf3603228.svg" alt="Logo">
+      </div>
+      <div class="nav-center">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="introductie.html">Introductie ▾</a>
+            <div class="dropdown-content">
+              <a href="introductie.html">Introductie</a>
+              <a href="portfolio.html">Portfolio</a>
+            </div>
+          </li>
+          <li><a href="eduarte.html">Eduarte</a></li>
+          <li><a href="opleiding.html">Opleiding</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <form class="nav-search" action="#" onsubmit="return false;">
+          <input type="search" placeholder="Zoek in site..." aria-label="Zoek">
+        </form>
+        <a class="aanmelden" href="formulier.html">Aanmelden</a>
+      </div>
+    </nav>
+
+  <main class="main">
+    <h1>Ouderavond — Aanmeldformulier</h1>
+    <p>Placeholder yuh yuhhh</p>
+
+    <form action="index.html" method="get" class="form panel">
+      <label for="naam">Naam (verplicht):
+        <input id="naam" name="naam" type="text" required>
+      </label>
+
+      <label for="geboortedatum">Geboortedatum (niet verplicht):
+        <input id="geboortedatum" name="geboortedatum" type="date">
+      </label>
+
+      <fieldset>
+        <legend>Dagen met meer dan 4 uren les / werk (niet verplicht)</legend>
+        <label><input type="checkbox" name="dagen[]" value="maandag"> Maandag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="dinsdag"> Dinsdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="woensdag"> Woensdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="donderdag"> Donderdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="vrijdag"> Vrijdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="zaterdag"> Zaterdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="zondag"> Zondag</label>
+      </fieldset>
+
+      <label for="email">Email (verplicht):
+        <input id="email" name="email" type="email" required>
+      </label>
+
+      <label for="wachtwoord">Wachtwoord (verplicht):
+        <input id="wachtwoord" name="wachtwoord" type="password" required>
+      </label>
+
+      <button type="submit" class="btn">Verstuur</button>
+    </form>
+  </main>
+  <footer class="site-footer">Gemaakt door de coolste yuhhh</footer>
+</body>
+</html>
